@@ -48,16 +48,16 @@
         
         <form action="/contactus" method="post">
             <div class="mb-3" >
-                <input class="form-control" placeholder="Name" name="name" type="text" >
+                <input class="form-control" placeholder="Name" name="name" type="text" required>
 
             </div>
             <div class="mb-3" >
-                <input class="form-control" placeholder="Example@gmail.com" name="email" type="email" >
+                <input class="form-control" placeholder="Example@gmail.com" name="email" type="email" required>
 
             </div>
 
             <div class="mb-3">
-                <textarea class="form-control" name="comment" id="" placeholder="Comment Here..." cols="30" rows="10"></textarea>
+                <textarea class="form-control" name="comment" id="" placeholder="Comment Here..." cols="30" rows="10" required></textarea>
 
             </div>
             <button class="btn btn-lg " type="submit" style="font-size: 1.5rem;" >Submit</button>
