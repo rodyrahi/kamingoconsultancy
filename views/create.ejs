@@ -20,96 +20,132 @@
 
 
 <body style="font-family: 'Josefin Sans', sans-serif;">
-  <div class="container" >
+  <div class="container">
 
-    <%- include('./partials/navbar.ejs') %>    
+    <%- include('./partials/navbar.ejs') %>
 
 
-  
-        <form  class="row " action="" method="post">
 
-            <div class="col-md-6">
-                <h1 class="my-3" >Create A Website</h1>
+    <form class="row " action="" method="post">
 
-                <div class="mb-2">
-                    <label class="text-muted" for="">Name</label>
+      <div class="col-md-6">
+        <h1 class="my-3">Create A Website</h1>
 
-                    <input class="form-control" type="text">
+        <div class="mb-2">
+          <label class="text-muted" for="">Name</label>
 
-                </div>
+          <input class="form-control" type="text">
 
-                <div class="mb-2">
-                    <label class="text-muted" for="">Phone</label>
+        </div>
 
-                    <input class="form-control" type="tel">
+        <div class="mb-2">
+          <label class="text-muted" for="">Phone</label>
 
-                </div>
-                <div class="mb-2">
-                    <label class="text-muted" for="">Email</label>
+          <input class="form-control" type="tel">
 
-                    <input class="form-control" type="email">
+        </div>
+        <div class="mb-2">
+          <label class="text-muted" for="">Email</label>
 
-                </div>
+          <input class="form-control" type="email">
 
-                <label class="text-muted" for="">Databse</label>
-                <select class="form-select mb-2" aria-label="Default select example">
-                    <option value="1"  selected>No Database</option>
-                    <option value="2">Database</option>
+        </div>
 
+
+
+
+        <label class="text-muted" for="">Type Of Website</label>
+        <select class="form-select mb-2" aria-label="Default select example">
+          <option value="1">Static</option>
+          <option value="2">Statup</option>
+          <option value="3">Personal</option>
+        </select>
+
+
+        <div class="d-flex">
+            <div class="me-3">
+                <label class="text-muted" for="">Domain</label>
+                <select class="form-select  " aria-label="Default select example">
+                  <option value="1">I Have A Domain</option>
+                  <option value="2">I Need A Domain</option>
+      
                 </select>
-
-
-                <label class="text-muted" for="">Type Of Website</label>
-                <select class="form-select mb-2" aria-label="Default select example">
-                    <option value="1">Static</option>
-                    <option value="2">Statup</option>
-                    <option value="3">Personal</option>
+            </div>
+            <div class="">
+                <label class="text-muted" for="">Server</label>
+                <select class="form-select " aria-label="Default select example">
+                  <option value="1">I Have A Server</option>
+                  <option value="2">I Need A Server</option>
+      
                 </select>
-
-                <div class="mb-2">
-                    <label class="text-muted">Extra Information</label>
-
-                    <textarea class="form-control" placeholder="Leave Extra Information here..." id="floatingTextarea"></textarea>
-                </div>
-               
+      
             </div>
-            <div class="col-md-6  bg-light" >
-                <h2 class="my-3" >Cost</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-6">Static Website</div>
-                    <div class="col-6 text-end">₹10000</div>
-                    <div class="col-6">Discount 50%</div>
-                    <div class="col-6 text-success text-end">-₹5000</div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-6"><h2>Total</h2></div>
-                    <div class="col-6 text-end  d-flex">
-                         <h6 class="text-muted ms-auto text-decoration-line-through" >₹10000</h6>
-                         <h4 class="ms-1">₹5000</h4> 
-                        
-                        </div>
-                </div>
-                
-                
+        
 
-                <hr>
-                <div class="mb-2">
-                    <label class="text-primary" for="">Coupon Code</label>
 
-                    <input class="form-control" type="text" style="text-transform: uppercase;">
+        
 
-                </div>
-             
-                <div class="mb-2 text-end">
-                    <button class="btn btn-primary rounded-pill me-auto">Create</button>
+        </div>
+        <p class="text-danger mb-3"> Note: Server And Domain Charges Are Not Inclued In The Total Cost. (We Can Buy Server and Domain For You Which Will Be Paid By You )</p>
 
-                </div>
-            </div>
 
-        </form>
-  
+        <label class="text-muted" for="">Databse</label>
+        <select class="form-select mb-2" aria-label="Default select example">
+          <option value="1" selected>No Database</option>
+          <option value="2">Database</option>
+
+        </select>
+
+
+
+
+
+        <div class="mb-2">
+          <label class="text-muted">Extra Information</label>
+
+          <textarea class="form-control" placeholder="Leave Extra Information here..." id="floatingTextarea"></textarea>
+        </div>
+
+      </div>
+      <div class="col-md-6  bg-light">
+        <h2 class="my-3">Cost</h2>
+        <hr>
+        <div class="row">
+          <div class="col-6">Static Website</div>
+          <div class="col-6 text-end">₹10000</div>
+          <div class="col-6">Discount 50%</div>
+          <div class="col-6 text-success text-end">-₹5000</div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-6">
+            <h2>Total</h2>
+          </div>
+          <div class="col-6 text-end  d-flex">
+            <h6 class="text-muted ms-auto text-decoration-line-through">₹10000</h6>
+            <h4 class="ms-1">₹5000</h4>
+
+          </div>
+        </div>
+
+
+
+        <hr>
+        <div class="mb-2">
+          <label class="text-primary" for="">Coupon Code</label>
+
+          <input class="form-control" type="text" style="text-transform: uppercase;">
+
+        </div>
+
+        <div class="mb-2 text-end">
+          <button class="btn btn-primary rounded-pill me-auto">Create</button>
+
+        </div>
+      </div>
+
+    </form>
+
 
   </div>
 
