@@ -37,5 +37,7 @@ app.post('/contactus', async(req, res) => {
   res.redirect('/')
 })
 
-
+app.get('/create', (req, res) => {
+  res.render('create')
+})
 app.listen(9999)
