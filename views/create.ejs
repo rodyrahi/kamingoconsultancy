@@ -22,6 +22,8 @@
 <body style="font-family: 'Josefin Sans', sans-serif;">
   <div class="container" >
 
+    <%- include('./partials/navbar.ejs') %>    
+
 
   
         <form  class="row " action="" method="post">
@@ -69,11 +71,41 @@
 
                     <textarea class="form-control" placeholder="Leave Extra Information here..." id="floatingTextarea"></textarea>
                 </div>
-                
+               
             </div>
-            <div class="col" style="background-color: lightskyblue;">
+            <div class="col bg-light" >
                 <h2 class="my-3" >Cost</h2>
-                <button class="btn btn-primary rounded-pill">Create</button>
+                <hr>
+                <div class="row">
+                    <div class="col-6">Static Website</div>
+                    <div class="col-6 text-end">₹10000</div>
+                    <div class="col-6">Discount 50%</div>
+                    <div class="col-6 text-success text-end">-₹5000</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6"><h2>Total</h2></div>
+                    <div class="col-6 text-end  d-flex">
+                         <h6 class="text-muted ms-auto text-decoration-line-through" >₹10000</h6>
+                         <h4 class="ms-1">₹5000</h4> 
+                        
+                        </div>
+                </div>
+                
+                
+
+                <hr>
+                <div class="mb-2">
+                    <label class="text-primary" for="">Coupon Code</label>
+
+                    <input class="form-control" type="text" style="text-transform: uppercase;">
+
+                </div>
+             
+                <div class="mb-2 text-end">
+                    <button class="btn btn-primary rounded-pill me-auto">Create</button>
+
+                </div>
             </div>
 
         </form>
