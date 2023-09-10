@@ -115,8 +115,8 @@
           <div class="col-6 text-end" id="typecost" >₹10000</div>
           <div class="col-6">Database</div>
           <div class="col-6 text-end" id="databasecost">₹0</div>
-          <div class="col-6">Discount 50%</div>
-          <div class="col-6 text-success text-end">-₹5000</div>
+          <div class="col-6">Discount %</div>
+          <div class="col-6 text-success text-end" id="discountcost">-₹5000</div>
         </div>
         <hr>
         <div class="row">
@@ -136,7 +136,7 @@
         <div class="mb-2">
           <label class="text-primary" for="">Coupon Code</label>
 
-          <input class="form-control" type="text" onchange="calculateTotal()" id="discount" style="text-transform: uppercase; max-width: 12rem;">
+          <input class="form-control" type="text" oninput="calculateTotal()"  id="discount" style="text-transform: uppercase; max-width: 12rem;">
 
         </div>
 
@@ -198,7 +198,7 @@
 
   
   if( discountcode.toUpperCase() === 'KCS50'){
-    
+
     discount = parseInt(grandtotal) * 0.5;
     console.log(discount)
 
@@ -210,6 +210,8 @@
   document.getElementById('total').innerText = '₹'+grandtotal;
   document.getElementById('typecost').innerText = '₹'+webtype;
   document.getElementById('databasecost').innerText = '₹'+database;
+  document.getElementById('discountcost').innerText = '-₹'+discount;
+
   
 }
 
