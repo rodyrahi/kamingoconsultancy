@@ -154,72 +154,48 @@
 </body>
 
 
+
 <script>
   var grandtotal = 0;
-
-  var webtype = 0
-  var discount =0
-  var database = 0
-
-  calculateTotal()
+  var webtype = 0;
+  var discount = 0;
+  var database = 0;
 
   function calculateTotal() {
-  var type = document.getElementById('type').value;
-  var storage = document.getElementById('database').value;
-  var discountcode = document.getElementById('discount').value;
+    var type = document.getElementById('type').value;
+    var storage = document.getElementById('database').value;
+    var discountcode = document.getElementById('discount').value;
 
-  if (type === '1') {
-  webtype= 2000;
-  document.getElementById('typename').innerText = 'Static Website';
+    if (type === '1') {
+      webtype = 2000;
+      document.getElementById('typename').innerText = 'Static Website';
+    } else if (type === '2') {
+      webtype = 3000;
+      document.getElementById('typename').innerText = 'Startup Website';
+    } else {
+      webtype = 5000;
+      document.getElementById('typename').innerText = 'Personal Website';
+    }
 
-  } else if (type === '2') {
-  webtype= 3000;
-  document.getElementById('typename').innerText = 'Statup Website';
+    if (storage === '1') {
+      database = 1000;
+    } else {
+      database = 0;
+    }
 
-  } else {
-  webtype= 5000;
-  document.getElementById('typename').innerText = 'Personal Website';
+    if (discountcode.toUpperCase() === 'KCS50') {
+      discount = Math.floor((webtype + database) * 0.5);
+    } else {
+      discount = 0;
+    }
 
+    grandtotal = webtype + database - discount;
+
+    document.getElementById('total').innerText = '₹' + grandtotal;
+    document.getElementById('typecost').innerText = '+₹' + webtype;
+    document.getElementById('databasecost').innerText = '+₹' + database;
+    document.getElementById('discountcost').innerText = '-₹' + discount;
   }
-
-
-
-  if(storage ==='1'){
-    database = 1000
-
-
-  }else{
-    database = 0
-    
-
-  }
-
-
-
-  
-  if( discountcode.toUpperCase() === 'KCS50'){
-
-    discount = parseInt(grandtotal) * 0.5;
-    console.log(discount)
-
-  }
-
-
-  grandtotal = webtype+database-discount
-
-  document.getElementById('total').innerText = '₹'+grandtotal;
-  document.getElementById('typecost').innerText = '₹'+webtype;
-  document.getElementById('databasecost').innerText = '₹'+database;
-  document.getElementById('discountcost').innerText = '-₹'+discount;
-
-  
-}
-
-
-
-
-
-
 </script>
 
 
