@@ -55,7 +55,7 @@
 
 
         <label class="text-muted" for="">Type Of Website</label>
-        <select class="form-select mb-2" aria-label="Default select example">
+        <select class="form-select mb-2" id="type" onchange="calculateTotal()" aria-label="Default select example">
           <option value="1">Static</option>
           <option value="2">Statup</option>
           <option value="3">Personal</option>
@@ -90,9 +90,9 @@
 
 
         <label class="text-muted" for="">Databse</label>
-        <select class="form-select mb-2" aria-label="Default select example">
-          <option value="1" selected>No Database</option>
-          <option value="2">Database</option>
+        <select class="form-select mb-2" onchange="calculateTotal()" id="database"  aria-label="Default select example">
+          <option value="0" selected>No Database</option>
+          <option value="1">Database</option>
 
         </select>
 
@@ -111,8 +111,10 @@
         <h2 class="my-3">Cost</h2>
         <hr>
         <div class="row">
-          <div class="col-6">Static Website</div>
-          <div class="col-6 text-end">₹10000</div>
+          <div class="col-6" id="typename">Static Website</div>
+          <div class="col-6 text-end" id="typecost" >₹10000</div>
+          <div class="col-6">Database</div>
+          <div class="col-6 text-end" id="databasecost">₹0</div>
           <div class="col-6">Discount 50%</div>
           <div class="col-6 text-success text-end">-₹5000</div>
         </div>
@@ -123,7 +125,7 @@
           </div>
           <div class="col-6 text-end  d-flex">
             <h6 class="text-muted ms-auto text-decoration-line-through">₹10000</h6>
-            <h4 class="ms-1">₹5000</h4>
+            <h4 class="ms-1" id="total">₹5000</h4>
 
           </div>
         </div>
@@ -134,7 +136,7 @@
         <div class="mb-2">
           <label class="text-primary" for="">Coupon Code</label>
 
-          <input class="form-control" type="text" style="text-transform: uppercase;">
+          <input class="form-control" type="text" onchange="calculateTotal()" id="discount" style="text-transform: uppercase; max-width: 12rem;">
 
         </div>
 
@@ -150,5 +152,74 @@
   </div>
 
 </body>
+
+
+<script>
+  var grandtotal = 0;
+
+  var webtype = 0
+  var discount =0
+  var database = 0
+
+  calculateTotal()
+
+  function calculateTotal() {
+  var type = document.getElementById('type').value;
+  var storage = document.getElementById('database').value;
+  var discountcode = document.getElementById('discount').value;
+
+  if (type === '1') {
+  webtype= 2000;
+  document.getElementById('typename').innerText = 'Static Website';
+
+  } else if (type === '2') {
+  webtype= 3000;
+  document.getElementById('typename').innerText = 'Statup Website';
+
+  } else {
+  webtype= 5000;
+  document.getElementById('typename').innerText = 'Personal Website';
+
+  }
+
+
+
+  if(storage ==='1'){
+    database = 1000
+
+
+  }else{
+    database = 0
+    
+
+  }
+
+
+
+  
+  if( discountcode.toUpperCase() === 'KCS50'){
+    
+    discount = parseInt(grandtotal) * 0.5;
+    console.log(discount)
+
+  }
+
+
+  grandtotal = webtype+database-discount
+
+  document.getElementById('total').innerText = '₹'+grandtotal;
+  document.getElementById('typecost').innerText = '₹'+webtype;
+  document.getElementById('databasecost').innerText = '₹'+database;
+  
+}
+
+
+
+
+
+
+</script>
+
+
 
 </html>
