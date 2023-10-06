@@ -30,10 +30,10 @@ app.get('/contactus', (req, res) => {
 app.post('/contactus', async(req, res) => {
   console.log(req.body);
 
-  const {name , email,comment} = req.body
+  const {name , email,company , phone,subject,message} = req.body
 
-  await executeQuery(`INSERT INTO clients (name, email, comment)
-  VALUES ('${name}', '${email}', '${comment}');`)
+  // await executeQuery(`INSERT INTO clients (name, email, comment)
+  // VALUES ('${name}', '${email}', '${comment}');`)
   res.redirect('/')
 })
 
