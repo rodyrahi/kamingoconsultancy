@@ -40,4 +40,6 @@ app.post('/contactus', async(req, res) => {
 app.get('/create', (req, res) => {
   res.render('create')
 })
-app.listen(9999)
+app.listen(9999,()=> {
+  console.log('http://localhost:9999');
+})
