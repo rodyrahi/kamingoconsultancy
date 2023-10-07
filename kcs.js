@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const con = require('./database.js')
+const {db} = require('./db');
 
 
 app.use(express.static("public"));
@@ -31,6 +32,7 @@ app.post('/contactus', async(req, res) => {
   console.log(req.body);
 
   const {name , email,company , phone,subject,message} = req.body
+  db.prepare('INSERT INTO client (name,company,email,phone,subject,message) VALUES(?,?,?,?,?,?)').run(name,company,email,phone,subject,message);
 
   // await executeQuery(`INSERT INTO clients (name, email, comment)
   // VALUES ('${name}', '${email}', '${comment}');`)
