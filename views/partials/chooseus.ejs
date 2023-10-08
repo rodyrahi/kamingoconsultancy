@@ -1,0 +1,95 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP&family=Oswald:wght@500;600&family=Poppins:wght@300;700&family=Roboto+Mono:wght@400;500&family=Roboto+Slab&family=Rubik:wght@600&family=Ysabeau+Infant:wght@700&display=swap');
+  </style>
+    
+    
+    <style>
+ .choose {
+            background-color: #212529;
+            color: whitesmoke;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .choose:hover {
+            background-color: whitesmoke;
+            color: #212529;
+        }
+        li{
+            list-style-type: none;
+        }
+
+        .floating-image {
+            animation: floatImage 4s infinite;
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+        }
+
+        @keyframes floatImage {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+    </style>
+    <title>Why Choose Us</title>
+
+    <section class="container mt-5  rounded-5 p-4 choose" style="    font-family: 'Roboto Slab', serif;">
+        <div class="row">
+            <div class="col-md-6">
+
+                <ul class="why-us-list">
+                    <h4 class="why-us-title">Why Us?</h4>
+                    <h1 class="my-3">Cuz We Do What You Need 💖</h1>
+                    <li class="d-flex mb-4" style="align-items: center;">
+                        <i class="fas fa-check-circle icon" style="color: #1abc9c; font-size: 2.5rem;"></i>
+                        <div>
+                            <h4 class="m-0">Expert Advisors</h4>
+                            <p class="m-0">Highly experienced consultants at your service.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4" style="align-items: center;">
+                        <i class="fas fa-check-circle icon" style="color: #1abc9c; font-size: 2.5rem;"></i>
+                        <div>
+                            <h4 class="m-0">Data-Driven Solutions</h4>
+                            <p class="m-0">We base our recommendations on solid data analysis.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4" style="align-items: center;">
+                        <i class="fas fa-check-circle icon" style="color: #1abc9c; font-size: 2.5rem;"></i>
+                        <div>
+                            <h4 class="m-0">24/7 Support</h4>
+                            <p class="m-0">We are always available to assist you.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4" style="align-items: center;">
+                        <i class="fas fa-check-circle icon" style="color: #1abc9c; font-size: 2.5rem;"></i>
+                        <div>
+                            <h4 class="m-0">Tailored Solutions</h4>
+                            <p class="m-0">Customized strategies to meet your unique needs.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-4" style="align-items: center;">
+                        <i class="fas fa-check-circle icon" style="color: #1abc9c; font-size: 2.5rem;"></i>
+                        <div>
+                            <h4 class="m-0">Proven Success</h4>
+                            <p class="m-0">Our track record speaks for itself.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-6 d-flex">
+                <img src="kamingoeye.png" class="m-auto floating-image" alt="" width="300px" srcset="" >
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JavaScript and Popper.js -->

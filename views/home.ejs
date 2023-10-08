@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Kamingo Consultancy </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="/Animated-Toggle-NavBar-BS5-V2.css">
   <link rel="stylesheet" href="/Features-Centered-Icons-icons.css">
@@ -20,8 +20,10 @@
 
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Domine&family=Inclusive+Sans&family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP&family=Oswald:wght@500;600&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@300;700&family=Roboto+Mono:wght@400;500&family=Roboto+Slab&family=Rubik:wght@600&family=Tajawal:wght@700&family=Ysabeau+Infant:wght@700&display=swap');
 </style>
+
+
 <style>
   .btn {
     border: 2px rgb(255, 255, 255) solid;
@@ -57,7 +59,7 @@
 </style>
 
 <body>
-  <div class="container" style="font-family: 'Hind Siliguri', sans-serif;">
+  <div class="container" style="font-family: 'Plus Jakarta Sans', sans-serif;">
 
     <%- include('./partials/navbar.ejs') %>
     <div class="row " id="Home" style="height: 85vh; ">
@@ -78,14 +80,15 @@
       </div>
     </div>
     <hr>
-    <div class="row" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <div class="row" style="margin-top: 3rem; margin-bottom: 3rem; font-family: 'Tajawal', sans-serif; ">
       <%- include('./partials/services.ejs') %>
     </div>
     <hr>
     <div class="row  partners " id="partners" style="">
       <%- include('./partials/partners.ejs') %>
-
     </div>
+
+    
 
     <div class="row " id="created" style="margin-top: 3rem;">
       <div class="col-sm my-auto text-center">
@@ -96,7 +99,7 @@
           <div class="col-sm-12 col-md-4">
             <img src="https://play-lh.googleusercontent.com/SBwtJyAWEddFgp0Yo9KVuMdwOUnGQBUrekKvJCVHRP46GOKlDOWnGhfiy6Ifzp7JUA=w240-h480" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Bundeli Kissan</h3>
-            <p>We developed "Bundeli Kissan" for the Madhya Pradesh government, aiming to support farmers, and it has garnered over 10,000 downloads on the Play Store. We're proud to contribute to the welfare of farmers in the region.</p>
+            <p class="text-muted">We developed "Bundeli Kissan" for the Madhya Pradesh government, aiming to support farmers, and it has garnered over 10,000 downloads on the Play Store. We're proud to contribute to the welfare of farmers in the region.</p>
 
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
@@ -104,14 +107,14 @@
           <div class="col-sm-12 col-md-4">
             <img src="https://cdn.pixabay.com/photo/2020/08/13/10/24/play-5484786_960_720.png" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Video</h3>
-            <p>We Provided video edditing services to many content creators</p>
+            <p class="text-muted">We Provided video edditing services to many content creators</p>
 
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
           <div class="col-sm-12 col-md-4">
             <img src="saas2.png" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Saas's</h3>
-            <p>We have successfully developed SaaS applications for banks, empowering them to efficiently manage accounts and enhance their operations. Our tailored solutions aim to streamline banking processes and contribute to improved account management for financial institutions.</p>
+            <p class="text-muted">We have successfully developed SaaS applications for banks, empowering them to efficiently manage accounts and enhance their operations. Our tailored solutions aim to streamline banking processes and contribute to improved account management for financial institutions.</p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
@@ -124,21 +127,21 @@
           <div class="col-sm-12 col-md-4">
             <img src="kalug.jpg" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Kalyug Ka Kurukshetra</h3>
-            <p>We specialize in providing comprehensive website solutions for establishing Kalyug's online presence. Our services encompass design, development, and optimization to ensure a robust and engaging digital platform that effectively represents Kalyug.</p>
+            <p class="text-muted">We specialize in providing comprehensive website solutions for establishing Kalyug's online presence. Our services encompass design, development, and optimization to ensure a robust and engaging digital platform that effectively represents Kalyug.</p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
           <div class="col-sm-12 col-md-4">
             <img src="https://play-lh.googleusercontent.com/qLjPN-3Dv1PSHcSojDrK2gK7XOcNNfV0iYYKxQh2zf1QalCK00qV8fF46MYoO-YuzNfU=w240-h480" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Kamingo App</h3>
-            <p>We have designed and developed the Kamingo App, which connects customers with a variety of local services. Our app offers a convenient way for users to access and engage with different service providers, enhancing their overall experience and meeting their needs effectively.</p>
+            <p class="text-muted">We have designed and developed the Kamingo App, which connects customers with a variety of local services. Our app offers a convenient way for users to access and engage with different service providers, enhancing their overall experience and meeting their needs effectively.</p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
           <div class="col-sm-12 col-md-4">
             <img src="https://png.pngtree.com/element_our/md/20180626/md_5b321c98efaa6.jpg" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>WhatsApp Bots</h3>
-            <p>Our offerings include WhatsApp bot-related services, allowing businesses to leverage automated interactions on the WhatsApp platform. These bots can enhance customer engagement, provide instant support, and streamline various processes, contributing to a more efficient and effective communication strategy.</p>
+            <p class="text-muted">Our offerings include WhatsApp bot-related services, allowing businesses to leverage automated interactions on the WhatsApp platform. These bots can enhance customer engagement, provide instant support, and streamline various processes, contributing to a more efficient and effective communication strategy.</p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
         </div>
@@ -146,6 +149,10 @@
 
     </div>
 
+    <hr>
+    <div class="row  partners " id="partners" style="">
+      <%- include('./partials/chooseus.ejs') %>
+    </div>
 
     <hr>
     <div class="row " style="margin-top: 3rem;" id="aboutus">
@@ -157,7 +164,7 @@
           <div class="col-sm-12 col-md-4">
             <img src="https://media.licdn.com/dms/image/D4D03AQHMj6TIgcUxvg/profile-displayphoto-shrink_800_800/0/1674899034827?e=2147483647&v=beta&t=vz_azWf0sFaeFYvMsYQTYMLCiHsJW2DB9wL0YFu8fIg" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Rajvendra Rahi(That's Me) </h3>
-            <p>We Made bundeli kissan for mp government for kissans and it has over 10k+ downloads on playstore</p>
+            <p class="text-muted">We Made bundeli kissan for mp government for kissans and it has over 10k+ downloads on playstore</p>
 
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
@@ -165,7 +172,7 @@
           <div class="col-sm-12 col-md-4">
             <img src="https://media.licdn.com/dms/image/D5603AQFhstS_GLPMKQ/profile-displayphoto-shrink_200_200/0/1688651646539?e=1698883200&v=beta&t=RKsOV0dGio9y7Jy8uHZmycU1K1l3wVTKQeYBtA8TNrY" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Trivendra Rahi</h3>
-            <p>We Provided video edditing services to many content creators</p>
+            <p class="text-muted" >We Provided video edditing services to many content creators</p>
 
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
@@ -173,7 +180,7 @@
           <div class="col-sm-12 col-md-4">
             <img src="https://thumbs.dreamstime.com/b/greek-round-antique-pattern-alexander-great-macedonian-vector-ornament-geometric-134991663.jpg" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Sikander</h3>
-            <p>We Provided video edditing services to many content creators</p>
+            <p class="text-muted" >We Provided video edditing services to many content creators</p>
 
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
@@ -187,21 +194,21 @@
           <div class="col-sm-12 col-md-4" data-bss-hover-animate="pulse">
             <img src="https://media.licdn.com/dms/image/D4D03AQFHJdv7OjX1Lg/profile-displayphoto-shrink_200_200/0/1680436852977?e=1698883200&v=beta&t=C8ZspV0e52Uz4FVcMi2z62ulqB693PrnYuZsFLpuK3g" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Ayush Tripathi</h3>
-            <p>We Created Saas Apps for the Banks which help them in managing accounts </p>
+            <p class="text-muted" >We Created Saas Apps for the Banks which help them in managing accounts </p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
           <div class="col-sm-12 col-md-4">
             <img src="https://media.licdn.com/dms/image/D5603AQH9whh5kQGJtw/profile-displayphoto-shrink_200_200/0/1674190772365?e=1698883200&v=beta&t=PHVbvFgOxABMLNVkO122ODVL-9A2-EubRibLQxp57KM" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Sachin Singh Baghel</h3>
-            <p>We create a full website solution of kalug's online presence</p>
+            <p class="text-muted" >We create a full website solution of kalug's online presence</p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
           <div class="col-sm-12 col-md-4">
             <img src="https://as2.ftcdn.net/v2/jpg/05/28/15/39/1000_F_528153983_mOYVMqbF53g6rwiXvAhMBIuQhjS6K6Fo.jpg" class="rounded-circle border shadow mb-3" width="150px" alt="" srcset="">
             <h3>Ayush Dhapade</h3>
-            <p>We Created Kamingo App which provides local services to customers </p>
+            <p class="text-muted" >We Created Kamingo App which provides local services to customers </p>
             <!-- <a href="" class="btn me-2" style="font-size: 1rem;">View</a> -->
           </div>
 
@@ -226,68 +233,9 @@
 
 
 
-<!-- <div class="container">
 
 
 
-
-
-
-        <div class="row h-auto pt-3" style="background-color: aliceblue;">
-            <div class="col mt-auto m-5">
-                <h1 class="mt-5" style="font-size: 3rem;">WE Create</h1>
-                <h1 style="font-size: 4rem;">What You Want</h1>
-
-                <p style="font-size: 1.2rem;">Kamingo Constultancy is a website which can help you create websites and beautiful apps</p>
-
-                <button class="btn me-2 mb-2"
-                    style="font-size: 1.5rem;"
-                    type="">Start</button>
-                <button class="btn mb-2"
-                    style="font-size: 1.5rem; "
-                    type="">Contact</button>
-
-            </div>
-            <div class="col m-5 "
-                style="">
-
-                <img src="websitepicto.png"
-                    alt=""
-                    srcset=""
-                    style="max-width: 40rem; width: 100%; ">
-
-            </div>
-
-        </div>
-
-        <div class="row h-auto pt-5" style="">
-            <div class="row text-center">
-                <h1 class="my-3" >What We Build </h1>
-                
-            </div>
-            <div class="row my-3 text-center">
-                <div class="col-4 d-flex" style="align-items: center;flex-direction: column;">
-                    <p>Bundeli Kissan</p>
-                    <div class="border rounded-3 bg-dark" style="height: 10rem; width:10rem">
-                    
-                    </div>
-                </div>
-                <div class="col-4">
-                    <p>Kamingo</p>
-                </div>
-                <div class="col-4">
-                    <p>Passbook Saas</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div> -->
-
-
-
-
-    
 <%- include('./partials/socialmedia.ejs') %>
 
 
