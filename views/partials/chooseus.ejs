@@ -37,6 +37,25 @@
             }
         }
 
+
+        .floating-image2 {
+            animation: floatImage 5s infinite;
+
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+        }
+
+        @keyframes floatImage2 {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
         .choose:hover .floating-image {
             content: url('kamingo_favicon.png'); /* Replace 'new-image.png' with the path to your new image */
         }
@@ -89,9 +108,13 @@
                 </ul>
             </div>
 
-
             <div class="col-md-6 d-flex">
+                <img src="person1.png" class="m-auto floating-image2" alt="" width="100px" srcset="" >
+
+                
                 <img src="kamingoeye.png" class="m-auto floating-image" alt="" width="300px" srcset="" >
+                <img src="person2.png" class="m-auto floating-image2  " alt="" width="100px" srcset="" >
+
             </div>
         </div>
     </section>
