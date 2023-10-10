@@ -1,40 +1,63 @@
 
 
-<nav class="navbar navbar-expand-lg bg-white sticky-top mb-2" style="border-bottom: 1px rgb(227, 227, 227) solid; border-radius: 0 0 2rem 2rem; font-family: 'Inclusive Sans', sans-serif;">
-  
-    <div class="container-fluid">
-      <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top mb-4" style="border-bottom: 1px rgb(227, 227, 227) solid; border-radius: 3rem; font-family: 'Inclusive Sans', sans-serif; top: 1rem;">
+  <div class="container-fluid">
+    <div class="text-start d-flex ">
+      <img src="kamingo_favicon.png" class="me-2 mb-2" alt="" srcset="" style="width: 3.2rem;">
+      <div class="">
+        <h4 class="m-0 fw-bold" style="color: cornflowerblue;">Kamingo</h4>
+        <h5 class="m-0" style="color: cornflowerblue;">Consultancy</h5>
+      </div>
+
+    </div>
+    <button class="btn btn-primary rounded-circle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton" style="padding: 0.5rem 0.8rem;
+    line-height: 1.5rem;
+    font-size: 1rem;">
+        <span class=""><i class="fa-solid fa-plus" id="icon"></i></span>
       </button>
+      
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: cornflowerblue;">Home</a>
 
-      <div class="text-start d-flex ">
-        <img src="kamingo_favicon.png" class="me-2 mb-2" alt="" srcset="" style="width: 3.2rem;">
-        <div class="">
-          <h4 class="m-0 fw-bold" style="color: cornflowerblue;">Kamingo</h4>
-          <h5 class="m-0" style="color: cornflowerblue;">Consultancy</h5>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#created" style="color: cornflowerblue;">Projects</a>
 
-      </div>
-      <div class="collapse navbar-collapse  " id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link"  href="/" style="color: cornflowerblue;">Home</a>
-                
-            </li>
-              <li class="nav-item">
-                  <a class="nav-link"  href="#created" style="color: cornflowerblue;">Projects</a>
-                  
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#blog" style="color: cornflowerblue;">Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#aboutus" style="color: cornflowerblue;">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="btn btn-primary nav-link  rounded-pill mx-2" href="/contactus" style="">ContactUs</a>
-              </li>
-          </ul>
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog" style="color: cornflowerblue;">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutus" style="color: cornflowerblue;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary nav-link  rounded-pill mx-2" href="/contactus" style="">ContactUs</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
+
+
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton");
+    const icon = document.getElementById("icon");
+  
+    toggleButton.addEventListener("click", function() {
+      // Check the current class of the icon element
+      if (icon.classList.contains("fa-plus")) {
+        // If it has the "fa-plus" class, remove it and add the "fa-minus" class
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+      } else {
+        // If it has the "fa-minus" class, remove it and add the "fa-plus" class
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+      }
+    });
+  });
+  </script>
