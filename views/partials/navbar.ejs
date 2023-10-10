@@ -13,8 +13,8 @@
     </div>
     <button class="btn btn-primary rounded-circle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton" style="padding: 0.5rem 0.8rem;
     line-height: 1.5rem;
-    font-size: 1rem; box-shadow: none;">
-        <span class=""><i class="fa-solid fa-plus" id="icon"></i></span>
+    font-size: 1rem; box-shadow: none; aspect-ratio: 1/1;">
+        <span class=""><i class="fa-solid fa-bars" id="icon"></i></span>
       </button>
       
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -49,14 +49,14 @@
   
     toggleButton.addEventListener("click", function() {
       // Check the current class of the icon element
-      if (icon.classList.contains("fa-plus")) {
+      if (icon.classList.contains("fa-bars")) {
         // If it has the "fa-plus" class, remove it and add the "fa-minus" class
-        icon.classList.remove("fa-plus");
-        icon.classList.add("fa-minus");
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
       } else {
         // If it has the "fa-minus" class, remove it and add the "fa-plus" class
-        icon.classList.remove("fa-minus");
-        icon.classList.add("fa-plus");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
       }
     });
   });
