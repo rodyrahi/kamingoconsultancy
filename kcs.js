@@ -42,6 +42,17 @@ app.post('/contactus', async(req, res) => {
 app.get('/create', (req, res) => {
   res.render('create')
 })
+
+
+
+app.get('/privacy', (req, res) => {
+  res.render('partials/privacy')
+})
+
+app.get('/terms', (req, res) => {
+  res.render('partials/terms')
+})
+
 app.listen(9999,()=> {
   console.log('http://localhost:9999');
 })
