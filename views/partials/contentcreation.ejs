@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+    <%- include('./header.ejs') %>
+
+<body>
+
+
+
+
+    <div class="container" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+        <%- include('./navbar.ejs') %>
+
+
+        <div class="row " style="margin-top: 7rem;">
+            <div class="col text-center   p-4 ">
+                <img src="person1.png"  width="100px" srcset="">
+            </div>
+            <div class="col-md-6 bg-dark text-white p-4" style="border-radius: 0rem 5rem 0 0rem;" >
+                <h5>rajvendra</h5>
+                <p>rajvendra rahi is the ceo</p>
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="col bg-dark text-white  p-4" style="border-radius: 0rem 0rem 0rem 5rem;" >
+                <h5>rajvendra</h5>
+                <p>rajvendra rahi is the ceo</p>
+            </div>
+            <div class="col-md-6 text-center   p-4 ">
+                <img src="person1.png"  width="100px" srcset="">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+=======
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Content Creation Flip Card</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .flip-card-back {
+            background-color: #f1c40f;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-content {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>we create content for your website</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-card-content">
+                                <h3>Front Side</h3>
+                                <p>Click to flip</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-card-content">
+                                <h3>Back Side</h3>
+                                <p>Content Creation is key to engaging your audience and delivering valuable information through various media such as text, images, videos, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+>>>>>>> f5665bf304e5d68f4e8e50c7af7b549cd930d70e
 </body>
 </html>
