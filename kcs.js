@@ -53,6 +53,25 @@ app.get('/terms', (req, res) => {
   res.render('partials/terms')
 })
 
+app.get('/contentcreation', (req, res) => {
+  res.render('partials/contentcreation')
+})
+
+app.get('/digitalmarketing', (req, res) => {
+  res.render('partials/digitalmarketing')
+})
+
+app.get('/development', (req, res) => {
+  res.render('partials/development')
+})
+
+app.get('/dataanalytics', (req, res) => {
+  res.render('partials/dataanalytics')
+})
+
+
+
 app.listen(9999,()=> {
   console.log('http://localhost:9999');
 })
+
