@@ -2,7 +2,35 @@
 <html lang="en">
 
 <%- include('./header.ejs') %>
+<style>
+    /* Add your custom CSS for the animated background here */
 
+
+    .animated-background {
+
+      background: linear-gradient(45deg, #ff5733, #ff33d3, #33a4ff, #33ff6d);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .content {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 <body>
 
 
@@ -13,7 +41,7 @@
 
 
 
-    <div class="row text-center  " style="height: 70vh;">
+    <div class="row text-center animated-background rounded-5 " style="height: 70vh;">
       <div class="m-auto">
         <h1>Empowering your </h1>
         <h1 style="font-size: 6rem;">Online Presence</h1>
@@ -81,4 +109,4 @@
 
 </body>
 
-</html>
+
