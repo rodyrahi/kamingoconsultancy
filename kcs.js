@@ -69,7 +69,9 @@ app.get('/dataanalytics', (req, res) => {
   res.render('partials/dataanalytics')
 })
 
-
+app.get('/blog', (req, res) => {
+  res.render('partials/blog')
+})
 
 app.listen(9999,()=> {
   console.log('http://localhost:9999');
