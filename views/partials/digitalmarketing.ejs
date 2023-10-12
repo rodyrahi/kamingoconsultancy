@@ -39,65 +39,80 @@
 <body>
 
 
-    <div class="container" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+  <div class="container" style="font-family: 'Plus Jakarta Sans', sans-serif;">
 
-        <div class="row ">
-            <div class="col-md-7">
-                <div class="row my-1 p-4 rounded border text-center food" style="">
-                    <div class="text-end">
-                        <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;" ></i>
+    <%- include('./navbar.ejs') %>
 
-                    </div>
-                    <h1 style="font-size: 9rem;" >📢</h1>
-            
-                    
-                    <h1 class="text-white m-3 fw-bold" style="font-size: 2rem;">Website Marketing</h1>
-                   <div class="bg-white shadow rounded-2 my-2">
-                    <p class="text-dark " >"Boost your online presence and reach your audience effectively with our tailored web marketing solutions. Let us help you achieve digital success."</p>
+    <div class="row ">
+      <div class="col-md-7">
+        <div class="row my-1 p-4 rounded border text-center food" style="">
+          <div class="text-end">
+            <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;"></i>
 
-                   </div>
-                    <div class=""><a href="/contactus" class="btn btn-primary btn-lg" >Buy Now</a>
-                    </div>
-                </div>
-                <div class="row my-1 p-4 rounded bg-dark shape text-center">
-                    <div class="text-end">
-                        <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;" ></i>
+          </div>
+          <h1 style="font-size: 9rem;">📢</h1>
 
-                    </div>
-                    <h1 style="font-size: 9rem;" >📸</h1>
 
-                    <h2 class="text-white text-center fw-bold">Socialmedia Marketing</h2>
-                    <div class="bg-dark shadow rounded-2 my-2">
-                        <p class="text-light">"Elevate your brand with our social media marketing expertise. We'll create engaging content and strategies to expand your reach and engage your audience."</p>
+          <h1 class="text-white m-3 fw-bold" style="font-size: 2rem;">Website Marketing</h1>
+          <div class="bg-white shadow rounded-2 my-2">
+            <p class="text-dark ">"Boost your online presence and reach your audience effectively with our tailored web marketing solutions. Let us help you achieve digital success."</p>
 
-                    </div>
-                    <div class=""><a href="/contactus" class="btn btn-primary btn-lg">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 bg-warning rounded p-4 m-1 wall text-center" style="height: 80vh;">
-                <div class="text-end">
-                    <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;" ></i>
+          </div>
+          <div class=""><a href="/contactus" class="btn btn-primary btn-lg">Buy Now</a>
+          </div>
+        </div>
+        <div class="row my-1 p-4 rounded bg-dark shape text-center">
+          <div class="text-end">
+            <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;"></i>
 
-                </div>
-                <h1 class="fw-bold my-4">Video</h1>
-              <h1 class="fw-bold my-4"> Marketing</h1>
-              <div class="bg-danger rounded p-2">
-                <p class="text-white">"Capture attention and tell your story through the power of video. Our video marketing strategies will engage, inform, and convert your audience effectively."</p>
-              </div>
-              <h1 style="font-size: 9rem;" >🎬</h1>
+          </div>
+          <h1 style="font-size: 9rem;">📸</h1>
 
-              <div class="">
-                <a href="/contactus" class="btn btn-primary btn-lg my-4">Buy Now</a>
-            </div>
-            </div>
+          <h2 class="text-white text-center fw-bold">Socialmedia Marketing</h2>
+          <div class="bg-dark shadow rounded-2 my-2">
+            <p class="text-light">"Elevate your brand with our social media marketing expertise. We'll create engaging content and strategies to expand your reach and engage your audience."</p>
 
-               
-
-            </div>
+          </div>
+          <div class=""><a href="/contactus" class="btn btn-primary btn-lg">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bg-warning rounded p-4 m-1 wall text-center" style="">
+        <div class="text-end">
+          <i class="fa-solid fa-circle-xmark cross " onclick="remove(this)" style="font-size: 2rem;"></i>
 
         </div>
+        <h1 class="fw-bold my-4">Video</h1>
+        <h1 class="fw-bold my-4"> Marketing</h1>
+        <div class="bg-danger rounded p-2">
+          <p class="text-white">"Capture attention and tell your story through the power of video. Our video marketing strategies will engage, inform, and convert your audience effectively."</p>
+        </div>
+        <h1 style="font-size: 9rem;">🎬</h1>
+
+        <div class="">
+          <a href="/contactus" class="btn btn-primary btn-lg my-4">Buy Now</a>
+        </div>
+      </div>
+
+
+
     </div>
+
+
+    <hr>
+    <div class="row " style="margin-top: 3rem;" id="aboutus">
+
+      <%- include('./connect.ejs') %>
+
+    </div>
+     
+    
+
+
+  </div>
+  
+
+  <%- include('./socialmedia.ejs') %>
 
 
 </body>
