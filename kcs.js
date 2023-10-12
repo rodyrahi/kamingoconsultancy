@@ -72,7 +72,9 @@ app.get('/dataanalytics', (req, res) => {
 app.get('/blog', (req, res) => {
   res.render('partials/blog')
 })
-
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
+});
 app.listen(9999,()=> {
   console.log('http://localhost:9999');
 })
