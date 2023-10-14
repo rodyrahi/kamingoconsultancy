@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const con = require('./database.js')
 const {db} = require('./db');
-
+const
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
