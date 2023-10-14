@@ -2,23 +2,23 @@ const express = require('express')
 const app = express()
 const con = require('./database.js')
 const {db} = require('./db');
-
+const dd 
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
-function executeQuery(query) {
-  return new Promise((resolve, reject) => {
-    con.query(query, (err, result, fields) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(result);
-      }
-    });
-  });
-}
+// function executeQuery(query) {
+//   return new Promise((resolve, reject) => {
+//     con.query(query, (err, result, fields) => {
+//       if (err) {
+//         reject(err);
+//       } else {
+//         resolve(result);
+//       }
+//     });
+//   });
+// }
 
 app.get('/', (req, res) => {
   res.render('home')
@@ -75,6 +75,9 @@ app.get('/blog', (req, res) => {
 app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
 });
+
+
+
 app.listen(9999,()=> {
   console.log('http://localhost:9999');
 })
